@@ -35,4 +35,4 @@ COPY docker-compose.yaml .
 COPY metadata.json .
 COPY docker.svg .
 COPY --from=client-builder /ui/build ui
-CMD ["node", "backend/server.js", "/run/guest-services/extension-node-extension.sock"]
+CMD ["node", "backend/build/server.js", "/run/guest-services/extension-node-extension.sock"]
