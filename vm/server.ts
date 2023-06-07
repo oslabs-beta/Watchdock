@@ -3,11 +3,11 @@ const http = require("http");
 let process = require("process");
 const express = require("express");
 const app = express();
-import type { Request, Response, NextFunction, ErrorRequestHandler } from 'express';
-import type { ErrorObj } from './types';
+import { Request, Response, NextFunction, ErrorRequestHandler } from 'express';
+import { ErrorObj } from './types';
 
 app.get("/hello", function (req: Request, res: Response) {
-  res.send({ message: "Hello Velocirabbits!!!" });
+  res.send({ message: "Hello TypeScript!" });
 });
 
 var sock = process.argv[2];
