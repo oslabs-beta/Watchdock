@@ -1,6 +1,7 @@
+import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 import { Table } from "@mui/material";
 
-function ContainerContainer() {
+function ContainerContainer() : ReactJSXElement {
     return ( 
         <div>
             <Table/>

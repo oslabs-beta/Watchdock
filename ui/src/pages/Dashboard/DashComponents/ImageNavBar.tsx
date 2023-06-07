@@ -1,7 +1,8 @@
+import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 
-let imageNums = ['image1','image2','image3','image4','image5','image6'];
+let imageNums : String[] = ['image1','image2','image3','image4','image5','image6'];
 
-function ImageNavBar() {
+function ImageNavBar() : ReactJSXElement {
     
 
     return (

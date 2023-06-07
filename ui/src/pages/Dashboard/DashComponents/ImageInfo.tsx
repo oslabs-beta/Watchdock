@@ -1,6 +1,8 @@
-let currentImageNum = 1;
+import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 
-function ImageInfo (){
+let currentImageNum : Number = 1;
+
+function ImageInfo () :ReactJSXElement {
     return(
         <div>
             <p>Image:{currentImageNum}</p>
