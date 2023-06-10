@@ -4,7 +4,6 @@ import { Table } from "@mui/material";
 function ContainerContainer() : ReactJSXElement {
     return ( 
         <div>
-            <Table/>
         </div>
      );
 }

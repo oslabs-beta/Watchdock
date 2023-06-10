@@ -8,7 +8,6 @@ function ImageContainer() : ReactJSXElement {
     return ( 
         <div>
             <ImageNavBar/>
-            <ImageInfo/>
         </div>
      );
 };
