@@ -22,7 +22,8 @@ FROM --platform=$BUILDPLATFORM node:18.9-alpine3.16
 LABEL org.opencontainers.image.title="DockerLCL" \
     org.opencontainers.image.description="A Docker Desktop extension for monitoring in-depth container metrics with a simplified CLI interface" \
     org.opencontainers.image.vendor="OSLabs Beta PTRI10 Velocirabbits" \
-    com.docker.desktop.extension.api.version="0.3.0" \
+    com.docker.desktop.extension.api.version="0.1.0" \
+    com.docker.desktop.extension.icon="https://icons8.com/icon/m0G9yM6EaFNM/container"\
     com.docker.extension.screenshots="" \
     com.docker.extension.detailed-description="" \
     com.docker.extension.publisher-url="" \
@@ -34,4 +35,4 @@ COPY docker-compose.yaml .
 COPY metadata.json .
 COPY docker.svg .
 COPY --from=client-builder /ui/build ui
-CMD ["node", "backend/server.js", "/run/guest-services/extension-node-extension.sock"]
+CMD ["node", "backend/build/server.js", "/run/guest-services/extension-node-extension.sock"]

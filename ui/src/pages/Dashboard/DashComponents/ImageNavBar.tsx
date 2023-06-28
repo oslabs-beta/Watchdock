@@ -41,5 +41,4 @@ function ImageNavBar() : ReactJSXElement {
       
     )
 }
-
 export default ImageNavBar;
