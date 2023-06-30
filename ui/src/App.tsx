@@ -15,8 +15,27 @@ export function App() {
   const [response, setResponse] = React.useState<string>();
   const ddClient = useDockerDesktopClient();
 
+  const getContainers = async () => {
+    console.log('CONTAINERS!!!!!!!!!!!!');
+    // shows current running containers
+    const containers = await ddClient.docker.listContainers();
+    console.log(containers);
+
+    // shows all containers including exited ones
+    // ddClient.docker.cli
+    //   .exec('ps', ['--all', '--format', '"{{json .}}"'])
+    //   .then((result) => {
+          // result.parseJsonLines() returns an array of objects
+    //     console.log(result.parseJsonLines());
+    //   });
+
+    // shows list of images
+    // const images = await ddClient.docker.listImages();
+    // console.log(images);
+  }
   const fetchAndDisplayResponse = async () => {
     const result = await ddClient.extension.vm?.service?.get('/hello');
+    getContainers();
     setResponse(JSON.stringify(result));
   };
 
