@@ -18,16 +18,23 @@ export function App() {
   const getContainers = async () => {
     console.log('CONTAINERS!!!!!!!!!!!!');
     // shows current running containers
-    const containers = await ddClient.docker.listContainers();
-    console.log(containers);
+    // const containers = await ddClient.docker.listContainers();
+    // console.log(containers);
 
     // shows all containers including exited ones
     // ddClient.docker.cli
     //   .exec('ps', ['--all', '--format', '"{{json .}}"'])
     //   .then((result) => {
-          // result.parseJsonLines() returns an array of objects
+    //       result.parseJsonLines() returns an array of objects
     //     console.log(result.parseJsonLines());
     //   });
+
+    // shows metrics BlockIO, CPUPerc, Container, ID, MemPerc, MemUsage, Name, NetIO
+      await ddClient.docker.cli
+      .exec('stats', ['--all', '--no-stream', '--format', '"{{json .}}"'])
+      .then((result) => {
+        console.log(result.stdout);
+      });
 
     // shows list of images
     // const images = await ddClient.docker.listImages();
