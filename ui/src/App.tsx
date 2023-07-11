@@ -30,15 +30,35 @@ export function App() {
     //   });
 
     // shows metrics BlockIO, CPUPerc, Container, ID, MemPerc, MemUsage, Name, NetIO
-      await ddClient.docker.cli
-      .exec('stats', ['--all', '--no-stream', '--format', '"{{json .}}"'])
-      .then((result) => {
-        console.log(result.stdout);
-      });
+      // await ddClient.docker.cli
+      // .exec('stats', ['--all', '--no-stream', '--format', '"{{json .}}"'])
+      // .then((result) => {
+      //   console.log(result.stdout);
+      // });
+
+      const containerName = 'mm-dev-hot';
+
+      // start container
+      // await ddClient.docker.cli
+      // .exec('start', ['mm-dev-hot'])
+      // .then(() => {
+      //   console.log('Container started!');
+      // });
+
+      // stop container
+      // await ddClient.docker.cli
+      // .exec('stop', [`${containerName}`])
+      // .then(() => {
+      //   console.log('Container stopped!');
+      // });
 
     // shows list of images
     // const images = await ddClient.docker.listImages();
     // console.log(images);
+
+    // remove container
+
+
   }
   const fetchAndDisplayResponse = async () => {
     const result = await ddClient.extension.vm?.service?.get('/hello');
