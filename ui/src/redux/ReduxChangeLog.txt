@@ -1,0 +1,9 @@
+=========================7/22/2023 FULL TEAM ==============================
+- Created dashboardSlice template
+- Created initiaStateBuilder class placeholder
+- Created containerStateBuilder class placeholder
+- Pseudocoded data layout for intialState
+- Added README txt file for redux development
+- Added ReduxChangeLog for redux development
+
+=========================[DATE] [TEAM MEMBER] ==============================
