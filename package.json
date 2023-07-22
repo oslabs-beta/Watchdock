@@ -3,6 +3,8 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.4",
-    "@types/react": "^18.2.8"
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/react": "^18.2.8",
+    "react-redux": "^8.1.1"
   }
 }
