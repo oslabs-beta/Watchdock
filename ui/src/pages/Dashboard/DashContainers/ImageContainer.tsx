@@ -5,6 +5,7 @@ import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 
 
 function ImageContainer() : ReactJSXElement {
+
     return ( 
         <div>
             <ImageNavBar/>
