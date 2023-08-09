@@ -1,4 +1,4 @@
-IMAGE?=docker/node-sample-extension
+IMAGE?=docker/dockerlcl
 TAG?=latest
 
 BUILDER=buildx-multi-arch
