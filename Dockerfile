@@ -23,7 +23,7 @@ LABEL org.opencontainers.image.title="DockerLCL" \
     org.opencontainers.image.description="A Docker Desktop extension for monitoring in-depth container metrics with a simplified CLI interface" \
     org.opencontainers.image.vendor="OSLabs Beta PTRI10 Velocirabbits" \
     com.docker.desktop.extension.api.version="0.1.0" \
-    com.docker.desktop.extension.icon="https://icons8.com/icon/m0G9yM6EaFNM/container"\
+    com.docker.desktop.extension.icon="https://www.flaticon.com/free-icons/container" title="container icons"\
     com.docker.extension.screenshots="" \
     com.docker.extension.detailed-description="" \
     com.docker.extension.publisher-url="" \
