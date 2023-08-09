@@ -19,7 +19,7 @@ export function App() {
     console.log('CONTAINERS!!!!!!!!!!!!');
     // shows current running containers
     // const containers = await ddClient.docker.listContainers();
-    // console.log(containers);
+    // console.log(`CONTAINERS:`, containers);
 
     // shows all containers including exited ones
     // ddClient.docker.cli
@@ -40,7 +40,7 @@ export function App() {
 
       // start container
       // await ddClient.docker.cli
-      // .exec('start', ['mm-dev-hot'])
+      // .exec('start', [`${containerName}`])
       // .then(() => {
       //   console.log('Container started!');
       // });
@@ -56,7 +56,49 @@ export function App() {
     // const images = await ddClient.docker.listImages();
     // console.log(images);
 
+    const containerId = 'ced9fb19269d';
+
     // remove container
+    // await ddClient.docker.cli
+    //   .exec('rm', ['-f', `${containerId}`])
+    //   .then(() => {
+    //     console.log('Container removed!');
+    // });
+
+    // remove images
+    await ddClient.docker.cli
+      .exec('rm', ['-f', `${containerId}`])
+      .then(() => {
+        console.log('Container removed!');
+    });
+
+    // create new container
+
+    // show image history
+      // docker image inspect
+      // docker image history
+
+    // docker image prune--remove unused images
+
+    // docker image remove
+
+    // docker kill
+
+    // docker logs
+
+    // docker pause container
+
+    // docker port 
+
+    // docker rename container
+
+    // docker restart container
+
+    // docker run
+      // create and run a new container from an image
+
+    // 
+
 
 
   }
