@@ -11,11 +11,15 @@ function useDockerDesktopClient() {
   return client;
 }
 
+
 export function App() {
   const [response, setResponse] = React.useState<string>();
   const ddClient = useDockerDesktopClient();
 
+  
+
   const getContainers = async () => {
+    let cliResult;
     console.log('CONTAINERS!!!!!!!!!!!!');
     // shows current running containers
     // const containers = await ddClient.docker.listContainers();
@@ -30,11 +34,12 @@ export function App() {
     //   });
 
     // shows metrics BlockIO, CPUPerc, Container, ID, MemPerc, MemUsage, Name, NetIO
-      // await ddClient.docker.cli
-      // .exec('stats', ['--all', '--no-stream', '--format', '"{{json .}}"'])
-      // .then((result) => {
-      //   console.log(result.stdout);
-      // });
+      await ddClient.docker.cli
+      .exec('stats', ['--all', '--no-stream', '--format', '"{{json .}}"'])
+      .then((result) => {
+        // console.log('Result from CLI:',result.stdout);
+        cliResult = result.stdout;
+      });
 
       const containerName = 'mm-dev-hot';
 
@@ -66,11 +71,11 @@ export function App() {
     // });
 
     // remove images
-    await ddClient.docker.cli
-      .exec('rm', ['-f', `${containerId}`])
-      .then(() => {
-        console.log('Container removed!');
-    });
+    // await ddClient.docker.cli
+    //   .exec('rm', ['-f', `${containerId}`])
+    //   .then(() => {
+    //     console.log('Container removed!');
+    // });
 
     // create new container
 
@@ -100,11 +105,11 @@ export function App() {
     // 
 
 
-
+      return cliResult;
   }
   const fetchAndDisplayResponse = async () => {
-    const result = await ddClient.extension.vm?.service?.get('/hello');
-    getContainers();
+    const result = await getContainers();
+    console.log('fetchAndDisplayResponse result: ',result);
     setResponse(JSON.stringify(result));
   };
 
