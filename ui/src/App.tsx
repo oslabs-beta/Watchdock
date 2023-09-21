@@ -5,6 +5,7 @@ import ContainerContainer from './pages/Dashboard/DashContainers/ContainerContai
 import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 
 //This is my test comment
+let comment = 'test';
 // Note: This line relies on Docker Desktop's presence as a host application.
 // If you're running this React app in a browser, it won't work properly.
 const client = createDockerDesktopClient();
