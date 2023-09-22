@@ -7,7 +7,8 @@ import { Request, Response, NextFunction, ErrorRequestHandler } from 'express';
 import { ErrorObj } from './types';
 
 app.get("/hello", function (req: Request, res: Response) {
-  res.send({ message: "Hello TypeScript!" });
+  console.log("BACKEND REQUEST SUCCESFUL!");
+  res.status(200);
 });
 
 var sock = process.argv[2];
