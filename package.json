@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "setup": "(npm i) && (cd ui && npm i) && (cd.. && cd vm && npm i)"
+    "setup": "(npm i) && (cd ui && npm i) && (cd.. && cd vm && npm i)",
+    "build": "(cd ui && npm run build) && (cd.. && cd vm && npm run build)"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",

@@ -1,8 +1,7 @@
-name: watchdock
+version: '3'
 services:
-  frontend:
-    image: docker
+  backend:
+    image: watchdock:latest
     ports:
-     - ""
-    networks:
-     - 
+     - "8080:80"
+

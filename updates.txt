@@ -1,0 +1,7 @@
+Updates from clientSetup:
+
+- Added script in main folder "setup" that can be run to install all main, ui and vm dependencies in one go
+- Added script in main folder "build" that runs build commands in both ui and vm
+- Added ddClient to the ui and tested its functionality
+- Setting up docker-compose.yml in order to connect socks between ui and vm
+- Services will more than likely need o be split

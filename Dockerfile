@@ -19,7 +19,7 @@ COPY ui /ui
 RUN npm run build
 
 FROM --platform=$BUILDPLATFORM node:18.9-alpine3.16
-LABEL org.opencontainers.image.title="DockerLCL" \
+LABEL org.opencontainers.image.title="WatchDock" \
     org.opencontainers.image.description="A Docker Desktop extension for monitoring in-depth container metrics with a simplified CLI interface" \
     org.opencontainers.image.vendor="OSLabs Beta PTRI10 Velocirabbits" \
     com.docker.desktop.extension.api.version="0.1.0" \

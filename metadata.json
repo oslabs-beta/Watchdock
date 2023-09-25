@@ -10,8 +10,8 @@
   "ui": {
     "dashboard-tab": {
       "title": "WatchDock",
-      "src": "index.tsx",
-      "root": "/ui",
+      "src": "build/index.html",
+      "root": "ui",
       "backend": {
         "socket": "extension-node-extension.sock"
       }
