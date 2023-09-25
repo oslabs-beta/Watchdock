@@ -1,4 +1,4 @@
-IMAGE?=docker/dockerlcl
+IMAGE?=WatchDock
 TAG?=latest
 
 BUILDER=buildx-multi-arch

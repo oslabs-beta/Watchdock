@@ -1,6 +1,7 @@
 {
   "icon": "docker.svg",
   "vm": {
+    "image": "${DESKTOP_PLUGIN_IMAGE}",
     "composefile": "docker-compose.yaml",
     "exposes": {
       "socket": "extension-node-extension.sock"
@@ -8,9 +9,9 @@
   },
   "ui": {
     "dashboard-tab": {
-      "title": "DockerLCL",
-      "src": "index.html",
-      "root": "ui",
+      "title": "WatchDock",
+      "src": "index.tsx",
+      "root": "/ui",
       "backend": {
         "socket": "extension-node-extension.sock"
       }
