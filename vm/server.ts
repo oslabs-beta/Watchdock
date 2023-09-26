@@ -12,6 +12,7 @@ app.get("/hello", function (req: Request, res: Response) {
 });
 
 var sock = process.argv[2];
+console.log('This is the sock',sock);
 
 fs.stat(sock, function (err: ErrorObj) {
   if (!err) {
