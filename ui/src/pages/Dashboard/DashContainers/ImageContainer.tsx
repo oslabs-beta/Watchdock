@@ -1,15 +1,14 @@
 import ImageNavBar from "../DashComponents/ImageNavBar";
-import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
-// import { ddClient } from "../../../App";
+import { ddClient } from "../../../App";
 
 
 
-function ImageContainer() : ReactJSXElement {
+function ImageContainer() : JSX.Element {
 
     return ( 
         <div>
             <ImageNavBar/>
-            <button>Image Data GET</button>
+            <button onClick={async ()=>{await ddClient.extension.vm?.service?.get('/hello')}}>GET HELLO</button>
         </div>
      );
 };

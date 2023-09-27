@@ -1,28 +1,45 @@
-FROM --platform=$BUILDPLATFORM node:18.9-alpine3.16
+FROM mongo AS database
 
-WORKDIR /extension
+WORKDIR /db
+COPY . /db
 
-LABEL org.opencontainers.image.title="WatchDock" \
-    org.opencontainers.image.description="A Docker Desktop extension for monitoring in-depth container metrics with a simplified CLI interface" \
-    org.opencontainers.image.vendor="OSLabs Beta PTRI10 Velocirabbits" \
-    com.docker.desktop.extension.api.version="0.1.0" \
-    com.docker.desktop.extension.icon="https://www.flaticon.com/free-icons/container" title="container icons"\
-    com.docker.extension.screenshots="" \
-    com.docker.extension.detailed-description="" \
-    com.docker.extension.publisher-url="" \
-    com.docker.extension.additional-urls="" \
-    com.docker.extension.changelog=""
 
-COPY package.json /extension/
+FROM watchdock-frontend AS frontend
 
-RUN npm i
+WORKDIR /ui
 
-COPY .. /extension/
+COPY  ui /ui
 
-RUN \
-  apk add --update --no-cache python3 && \
-  pip3 install docker-compose
-  
-RUN docker compose up
+RUN npm install
 
-CMD ["node", "backend/build/server.js", "/run/guest-services/extension-node-extension.sock"]
+RUN npm run build
+
+
+
+FROM watchdock-backend AS backend
+
+WORKDIR /vm
+
+
+COPY  vm /vm
+
+RUN npm install
+
+RUN npm run build
+
+
+FROM --platform=$BUILDPLATFORM node:18.9-alpine3.16 AS WatchDock
+
+LABEL "com.docker.desktop.extension.api.version"="0.3.4"
+
+COPY --from=frontend ./ui/build /ui
+COPY --from=backend ./vm/build /vm
+COPY --from=database . /db
+
+COPY package.json .
+
+COPY metadata.json .
+COPY docker-compose.yaml .
+COPY docker.svg .
+
+CMD ["npm", "start"]

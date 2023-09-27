@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+# Remove the socket file if it exists
+rm -f $1
+
+# Start the backend server
+npm run start:backend
