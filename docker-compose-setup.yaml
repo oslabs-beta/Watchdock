@@ -1,0 +1,53 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./ui
+      dockerfile: frontend.Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - frontEndData:/var/run/watchDock
+    environment:
+      - BACKEND_URL=http+unix://%2Fvar%2Frun%2FwatchDock%2FwatchDock.sock
+    networks:
+      - watchdock-network
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: ./vm
+      dockerfile: backend.Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - backEndData:/var/run/watchDock
+    networks:
+      - watchdock-network
+    depends_on:
+      - database
+  database:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb-data:/data/mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=watchDock
+      - MONGO_INITDB_ROOT_PASSWORD=watchDock
+      - MONGO_INITDB_DATABASE=watchDock
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+      - MONGO_PORT=27017
+    networks:
+      - watchdock-network
+networks:
+  watchdock-network:
+    driver: bridge
+volumes:
+  frontEndData:
+    driver: local
+  backEndData:
+    driver: local
+  mongodb-data:
+    driver: local

@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "setup": "docker-compose up",
+    "setup": "(docker compose -f docker-compose-setup.yaml up)",
+    "install": "(docker build --tag=watchdock:latest .) && (docker extension install watchdock:latest)",
     "rebuild": "(docker build --tag=watchdock:latest .) && (docker extension update watchdock:latest) && ( docker extension dev debug watchdock )"
   },
   "dependencies": {

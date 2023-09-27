@@ -5,7 +5,7 @@ FROM --platform=$BUILDPLATFORM node:18.9-alpine3.16 AS builder
 #Creaing a directory for the backend and copyin gover the package.json
 WORKDIR /backend
 
-COPY  vm /backend/
+COPY  . /backend/
 
 #Building production build
 RUN chmod +x ./WatchDockSocket
