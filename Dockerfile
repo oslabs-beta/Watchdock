@@ -10,7 +10,7 @@ WORKDIR /ui
 
 COPY  ui /ui
 
-RUN npm install
+RUN npm install --no-optional
 
 RUN npm run build
 
@@ -23,7 +23,7 @@ WORKDIR /vm
 
 COPY  vm /vm
 
-RUN npm install
+RUN npm install --no-optional
 
 RUN npm run build
 
@@ -35,8 +35,6 @@ LABEL "com.docker.desktop.extension.api.version"="0.3.4"
 COPY --from=frontend ./ui/build /ui
 COPY --from=backend ./vm/build /vm
 COPY --from=database . /db
-
-COPY package.json .
 
 COPY metadata.json .
 COPY docker-compose.yaml .
