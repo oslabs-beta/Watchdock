@@ -1,15 +1,15 @@
 {
-  "name": "WatchDock",
+  "name": "Watchdock",
   "description": "A Docker Desktop extension for monitoring in-depth container metrics with a simplified CLI interface",
   "icon": "docker.svg",
-  "version": "0.3.0",
-  "publisher": "OSLabs Beta PTRI10 Velocirabbits",
+  "version": "0.1.0",
+  "publisher": "VCRBTS",
   "backend": {
     "socket": "extension-node-extension.sock"
   },
   "ui": {
     "dashboard-tab": {
-      "title": "WatchDock",
+      "title": "Watchdock",
       "src": "index.html",
       "root": "ui",
       "backend": {

@@ -1,4 +1,4 @@
-IMAGE?=WatchDock
+IMAGE?=Watchdock
 TAG?=latest
 
 BUILDER=buildx-multi-arch

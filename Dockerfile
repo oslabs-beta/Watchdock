@@ -28,7 +28,7 @@ RUN npm install --no-optional
 RUN npm run build
 
 
-FROM --platform=$BUILDPLATFORM node:18.9-alpine3.16 AS WatchDock
+FROM --platform=$BUILDPLATFORM node:18.9-alpine3.16 AS Watchdock
 
 LABEL "com.docker.desktop.extension.api.version"="0.3.4"
 
