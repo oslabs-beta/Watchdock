@@ -36,7 +36,10 @@ COPY --from=frontend ./ui/build /ui
 COPY --from=backend ./vm/build /vm
 COPY --from=database . /db
 
+COPY app.Dockerfile .
+COPY package.json .
 COPY metadata.json .
+COPY docker-compose-setup.yaml .
 COPY docker-compose.yaml .
 COPY docker.svg .
 

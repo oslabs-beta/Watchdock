@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "setup": "(docker compose -f docker-compose-setup.yaml up -d) && (docker build --tag=watchdock:latest .) && (docker extension install watchdock:latest) && ( docker extension dev debug watchdock )",
-    "rebuild": "(//add a command to clear the docker daemon of our containers and images and volumes for this)(docker build --tag=watchdock:latest .) && (docker extension update watchdock:latest) && ( docker extension dev debug watchdock )"
+    "install": "(docker compose -f docker-compose-setup.yaml up -d) && (docker build --tag=watchdock:latest .) && (docker extension install watchdock:latest) && ( docker extension dev debug watchdock )",
+    "restart": "(docker compose -f docker-compose-setup.yaml up -d) && (docker build --tag=watchdock:latest .) && (docker extension update watchdock:latest) && ( docker extension dev debug watchdock )",
+    "production": "(pending preparation)(docker pull vcrbt/watchdock:latest) && (docker build -f app.Dockerfile .)"
   }
 }
