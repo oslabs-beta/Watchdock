@@ -1,7 +1,8 @@
 version: '3.8'
 services:
   frontend:
-    image: watchdock-frontend
+    image: vcrbt/watchdock:frontend
+    command: npm start
     ports:
       - 3000:80
     volumes:
@@ -13,7 +14,8 @@ services:
     depends_on:
       - backend
   backend:
-    image: watchdock-backend
+    image: vcrbt/watchdock:backend
+    command: node server.js
     ports:
       - 8080:80
     volumes:

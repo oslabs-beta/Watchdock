@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "setup": "(docker system prune -af --volumes) && (docker compose -f docker-compose-setup.yaml up)",
-    "install": "(docker build --tag=watchdock:latest .) && (docker extension install watchdock:latest) && ( docker extension dev debug watchdock )",
-    "rebuild": "(docker build --tag=watchdock:latest .) && (docker extension update watchdock:latest) && ( docker extension dev debug watchdock )",
-    "install-prod": "(docker pull vcrbt/watchdock:0.1.0) && (docker extension install vcrbt/watchdock:0.1.0)"
+    "setup": "(docker compose -f docker-compose-setup.yaml up -d) && (docker build --tag=watchdock:latest .) && (docker extension install watchdock:latest) && ( docker extension dev debug watchdock )",
+    "rebuild": "(//add a command to clear the docker daemon of our containers and images and volumes for this)(docker build --tag=watchdock:latest .) && (docker extension update watchdock:latest) && ( docker extension dev debug watchdock )"
   }
 }
