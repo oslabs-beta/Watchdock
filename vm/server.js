@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const server = http.createServer(app);
 const port = 8080;
+const ip = "0.0.0.0";
 
 
 
@@ -13,10 +14,9 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get("/hello", function (req, res) {
-  console.log("BACKEND REQUEST SUCCESFUL! HELLO HELLO HELLO!");
-  res.send(200);
+  res.status(200).send('WE MADE IT TO THE BACKEND!');
 });
 
-server.listen(port, function () {
+server.listen(port, ip, function () {
   console.log('Express server listening on port ' + port);
 });

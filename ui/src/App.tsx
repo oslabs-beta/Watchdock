@@ -11,7 +11,7 @@ export const ddClient = createDockerDesktopClient();
 // If you're running this React app in a browser, it won't work properly.
 
 export function App() : ReactJSXElement {
-  ddClient.desktopUI.toast.success('Client is working!');
+  ddClient.desktopUI.toast.success('App is up and running! Click below to say hi to the backend!');
   return (
     <>
       <ImageContainer/>
