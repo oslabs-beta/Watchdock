@@ -9,7 +9,7 @@ function ImageContainer() : JSX.Element {
         <div>
             <ImageNavBar/>
             <button onClick={async ()=>{
-                fetch('http://host.docker.internal:8080/hello')
+                ddClient.extension.vm.service.get('/hello')
                 .then(() => ddClient.desktopUI.toast.success('Hello from the backend BAYBY!'))
                 .catch(() => ddClient.desktopUI.toast.error("Backend isn't running! HOW RUDE!!"));
                 }}>HI BACKEND!</button>

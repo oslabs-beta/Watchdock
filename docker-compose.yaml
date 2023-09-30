@@ -1,12 +1,10 @@
 version: '3.8'
 services:
   frontend:
-    image: vcrbt/watchdock:frontend
+    image: watchdock:latest
     command: npm start
     ports:
       - 3000:80
-    volumes:
-      - frontEndData:/var/run/watchDock
     environment:
       - BACKEND_URL=http+unix://%2Fvar%2Frun%2FwatchDock%2FwatchDock.sock
     networks:
@@ -14,7 +12,7 @@ services:
     depends_on:
       - backend
   backend:
-    image: vcrbt/watchdock:backend
+    image: watchdock:latest
     command: node server.js
     ports:
       - 8080:80
@@ -43,8 +41,6 @@ networks:
   watchdock-network:
     driver: bridge
 volumes:
-  frontEndData:
-    driver: local
   backEndData:
     driver: local
   mongodb-data:
