@@ -1,10 +1,11 @@
 version: '3.8'
 services:
   frontend:
-    image: vcrbt/watchdock:frontend
-    command: npm start
+    build:
+      context: ./ui
+      dockerfile: frontend.Dockerfile
     ports:
-      - 3000:80
+      - 3000:3000
     volumes:
       - frontEndData:/var/run/watchDock
     environment:
@@ -14,10 +15,11 @@ services:
     depends_on:
       - backend
   backend:
-    image: vcrbt/watchdock:backend
-    command: node server.js
+    build:
+      context: ./vm
+      dockerfile: backend.Dockerfile
     ports:
-      - 8080:80
+      - 8080:8080
     volumes:
       - backEndData:/var/run/watchDock
     networks:
@@ -27,7 +29,7 @@ services:
   database:
     image: mongo
     ports:
-      - 27017:80
+      - 27017:27017
     volumes:
       - mongodb-data:/data/mongodb
     environment:

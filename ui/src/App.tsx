@@ -4,24 +4,14 @@ import ImageContainer from './pages/Dashboard/DashContainers/ImageContainer';
 import ContainerContainer from './pages/Dashboard/DashContainers/ContainerContainer';
 import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 
+export const backendURL = 'http://host.docker.internal:8080';
+export const ddClient = createDockerDesktopClient();
 
 // Note: This line relies on Docker Desktop's presence as a host application.
 // If you're running this React app in a browser, it won't work properly.
-const client = createDockerDesktopClient();
-
-function useDockerDesktopClient(){
-  return client;
-}
 
 export function App() : ReactJSXElement {
-  const [response, setResponse] = React.useState<string>();
-  const ddClient = useDockerDesktopClient();
-
-  const fetchAndDisplayResponse = async () => {
-    const result = await ddClient.extension.vm?.service?.get('/hello');
-    setResponse(JSON.stringify(result));
-  };
-
+  ddClient.desktopUI.toast.success('Oh hey things are rebuilding properly!');
   return (
     <>
       <ImageContainer/>
