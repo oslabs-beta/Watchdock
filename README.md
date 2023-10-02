@@ -1,12 +1,7 @@
-## Product Description
-A successful README should start off with a good description of what your product is. This should be a clear and concise summary of what you’ve built, what it’s intended to be used for, and why one would use it. Your description should answer the following questions:
-  1. What does your product do?
-  1. What problem does it solve?
-  1. What are its most important features (i.e. what makes it stand out)?
-  1. For iterations, it may be useful to highlight any major new features here
-### Product Title
-Rather than simple text, let's make your product title pop a little bit by adding a image. 
-- Something like this:
+## Watchdock
+Watchdock is a Docker Desktop extension that helps manage images and containers and view image and container metrics. We created this to provide a simplified user experience so that developers can focus on creating applications instead of managing their images/containers. Watchdock is a multi-container application that has a frontend container, backend container, and database container that all communicate with each other. Its frontend is built with React and TypeScript and the backend is built with TypeScript and Node.js. Useful metrics available include CPU, Disk I/O, Memory, and Runtime. 
+
+### Watchdock
   <p align="center">
   <img src="./assets/readme_logo.png" />
   </p>
