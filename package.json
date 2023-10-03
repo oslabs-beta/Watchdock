@@ -1,7 +1,9 @@
-{
-  "scripts": {
+{  "scripts": 
+  {
     "install": "(docker compose -f docker-compose-setup.yaml up -d) && (docker build --tag=watchdock:latest .) && (docker extension install watchdock:latest) && ( docker extension dev debug watchdock )",
     "restart": "(docker compose -f docker-compose-setup.yaml up -d) && (docker build --tag=watchdock:latest .) && (docker extension update watchdock:latest) && ( docker extension dev debug watchdock )",
-    "production": "(pending preparation)(docker pull vcrbt/watchdock:latest) && (docker build -f app.Dockerfile .)"
+    "production": "(pending preparation)(docker pull vcrbt/watchdock:latest) && (docker build -f app.Dockerfile .)",
+    "installm": "docker compose -f docker-compose-setup.yaml up -d && docker build --tag=watchdock:latest . && docker extension install watchdock:latest &&  docker extension dev debug watchdock ",
+    "restartm":"docker compose -f docker-compose-setup.yaml up -d && docker build --tag=watchdock:latest . && docker extension update watchdock:latest &&  docker extension dev debug watchdock "
   }
 }
