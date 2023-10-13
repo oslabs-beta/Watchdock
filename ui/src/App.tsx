@@ -4,7 +4,7 @@ import ImageContainer from './pages/Dashboard/DashContainers/ImageContainer';
 import ContainerContainer from './pages/Dashboard/DashContainers/ContainerContainer';
 import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 
-export const backendURL = 'http://host.docker.internal:8080';
+export const backendURL = 'http://localhost:8080';
 export const ddClient = createDockerDesktopClient();
 
 // Note: This line relies on Docker Desktop's presence as a host application.
