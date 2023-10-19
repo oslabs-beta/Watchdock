@@ -1,20 +1,20 @@
 ## Watchdock
 Watchdock is a Docker Desktop extension that helps manage images and containers and view image and container metrics. We created this to provide a simplified user experience so that developers can focus on creating applications instead of managing their images/containers. Watchdock is a multi-container application that has a frontend container, backend container, and database container that all communicate with each other. Its frontend is built with React and TypeScript and the backend is built with TypeScript and Node.js. Useful metrics available include CPU, Disk I/O, Memory, and Runtime. 
 
-### Watchdock
+<!-- ### Watchdock -->
   <p align="center">
-  <img src="./assets/readme_logo.png" />
+  <img src="./assets/WatchDockLogoTransparent.png" />
   </p>
 
-### Screen Shots and GIFs of Your Product in Action
-Ths is another great way to make your README pop and give your audience a sense of what your tool is at a quick glance.
+### Product in Action
 
   - Examples:
   <p align="center">
-    <img src="./assets/reactype.png" />
+    <img src="./assets/watchdockExtension.png" />
+    <img src="./assets/watchdockExtensionDropdown.png"/>
   </p>
 
----
+<!-- ---
   <p align="center">
       <img src="./assets/reactime.gif"/>
   </p>
@@ -24,27 +24,34 @@ Fun huh? 😁
   
   <p align="center">
       <img src="./assets/office.gif"/>
-  </p>
+  </p> -->
 
-[Guidance on how to create screen share GIFs](https://www.howtogeek.com/286210/how-to-turn-your-computer-screen-into-an-animated-gif/)
+<!-- [Guidance on how to create screen share GIFs](https://www.howtogeek.com/286210/how-to-turn-your-computer-screen-into-an-animated-gif/) -->
 
 ## Instructions
-Your README should include instructions on using the product. These should be as detailed and user-friendly as possible, and include all of the following:
-1. Initial setup instructions
+<!-- Your README should include instructions on using the product. These should be as detailed and user-friendly as possible, and include all of the following: -->
+__Installation__
 
-1. Installation
-    - This should include any OS-specific instructions (e.g. MacOS, Windows, Linux) if applicable.
+1. Initial setup instructions: After cloning repo, run npm install in root directory. Make sure Docker Desktop is running. 
 
-1. Running the application
+2. Then simply go to Docker Desktop and explore the Watchdock application in the Extensions section!
 
-1. Usage guidelines
+__Running the Application__ 
+
+1. The dashboard shows all containers and their metrics including container Name, CPU, Disk I/O, Memory, and Runtime.
+
+2. In the container options column, users can choose to Run or Delete specific containers.
+
+3. The Image dropdown menu at the top allows users to view specific images. 
+
+<!-- 1. Usage guidelines
     - Walkthrough of how to use the application (this should focus on highlighting its main features).
 
-1. Links to other documentation that one might need to better understand your product (links to React docs, Stack Overflow posts, etc).
+1. Links to other documentation that one might need to better understand your product (links to React docs, Stack Overflow posts, etc). -->
 
-1. __Pro Tip:__ While not a requirement, another great feature is to add a link to a demo of your tool. Easiest way to do this is by publishing a demo on youtube and linking to that youtube video.
+<!-- 1. __Pro Tip:__ While not a requirement, another great feature is to add a link to a demo of your tool. Easiest way to do this is by publishing a demo on youtube and linking to that youtube video.
     - Example:
-  [![demo_screenshot](./assets/demo_screenshot.png)](https://www.youtube.com/watch?v=X_zp6CodHjc&t=493s)
+  [![demo_screenshot](./assets/demo_screenshot.png)](https://www.youtube.com/watch?v=X_zp6CodHjc&t=493s) -->
 
 ## Open Source Information
 As your product is Open Source, your README should invite contributions and make it explicitly clear on how one should go about doing so. Therefore, make sure you provide the following information:
