@@ -23,14 +23,13 @@ const columns : GridColDef[] = [
     {field: "col3", headerName: "Disk I/O", width: 150},
     {field: "col4", headerName: "Memory", width: 150},
     {field: "col5", headerName: "Run Time", width: 150},
-    // {field: "col6", headerName: "Image1 Conts", width: 150},
-    {field: "col7", headerName: "Container Options", width: 150, renderCell: () =>{ return (<><button onClick={containerRun}>Run</button><button>Delete</button></>)}}
+    {field: "col7", headerName: "Container Options", width: 300, renderCell: () =>{ return (<><button onClick={containerRun}>Run</button><button>Delete</button></>)}}
 ];
 
 
 function ContainerContainer() : ReactJSXElement {
     return ( 
-        <DataGrid rows={rows} columns={columns} />    
+        <DataGrid style = {{height: "367px"}} rows={rows} columns={columns}/>    
     )
 };
 
