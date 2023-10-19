@@ -1,14 +1,19 @@
+import { ddClient } from "../../../App";
 import ImageNavBar from "../DashComponents/ImageNavBar";
-import ImageInfo from "../DashComponents/ImageInfo";
-import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
+import { backendURL } from "../../../App";
 
 
 
-function ImageContainer() : ReactJSXElement {
+function ImageContainer() : JSX.Element {
 
     return ( 
         <div>
             <ImageNavBar/>
+            <button onClick={async ()=>{
+                fetch( backendURL + '/hello')
+                .then(() => ddClient.desktopUI.toast.success('Hello from the backend BAYBY!'))
+                .catch(() => ddClient.desktopUI.toast.error("Backend isn't running! HOW RUDE!!"));
+                }}>HI BACKEND!</button>
         </div>
      );
 };

@@ -19,7 +19,7 @@
   },
   "include": [
     "./**/*.ts"
-  ],
+, "server.js"  ],
   "exclude": [
     "node_modules"
   ]

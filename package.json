@@ -1,10 +1,9 @@
-{
-  "dependencies": {
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.13.4",
-    "@reduxjs/toolkit": "^1.9.5",
-    "@types/react": "^18.2.8",
-    "react-redux": "^8.1.1"
+{  "scripts": 
+  {
+    "install": "(docker compose -f docker-compose-setup.yaml up -d) && (docker build --tag=watchdock:latest .) && (docker extension install watchdock:latest) && ( docker extension dev debug watchdock )",
+    "restart": "(docker compose -f docker-compose-setup.yaml up -d) && (docker build --tag=watchdock:latest .) && (docker extension update watchdock:latest) && ( docker extension dev debug watchdock )",
+    "production": "(pending preparation)(docker pull vcrbt/watchdock:latest) && (docker build -f app.Dockerfile .)",
+    "installm": "docker compose -f docker-compose-setup.yaml up -d && docker build --tag=watchdock:latest . && docker extension install watchdock:latest &&  docker extension dev debug watchdock ",
+    "restartm":"docker compose -f docker-compose-setup.yaml up -d && docker build --tag=watchdock:latest . && docker extension update watchdock:latest &&  docker extension dev debug watchdock "
   }
 }
