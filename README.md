@@ -8,9 +8,12 @@ Watchdock is a Docker Desktop extension that helps manage images and containers 
 
 ### Product in Action
 
-  - Examples:
+
   <p align="center">
     <img src="./assets/watchdockExtension.png" />
+  </p>
+
+  <p align="center">
     <img src="./assets/watchdockExtensionDropdown.png"/>
   </p>
 
