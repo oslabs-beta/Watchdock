@@ -80,11 +80,7 @@ As your product is Open Source, your README should invite contributions and make
 - 🙏🏻 = Looking for contributors
 
 
-## Changelog (If Applicable)
-All iteration OSPs should include a changelog detailing which features or fixes each version introduced.
-
-
-## License Information
+<!-- ## License Information
 
 Open source licensing information is needed in your repository to make it easier for other people to contribute. If you have not already added this manually, Github makes it really easy. 
 
@@ -94,100 +90,51 @@ Open source licensing information is needed in your repository to make it easier
 
 1. Once you do this you will see a _"Choose a license template"_ menu pop up. Click it and select "MIT License".
 
-1. Finally, commit your new licensing file to your main repo, and you are set 😼
+1. Finally, commit your new licensing file to your main repo, and you are set 😼 -->
 
 
 ## Contributor Information
-Include a list of everyone who has contributed to the product (i.e. your OSP group members, and any previous groups if it is an iteration) Things that should be included here: 
+<!-- Include a list of everyone who has contributed to the product (i.e. your OSP group members, and any previous groups if it is an iteration) Things that should be included here: 
 1. Each person’s full name
 1. Github handle
 1. Photo (optional)
 1. Other relevant links (i.e. LinkedIn, Personal Website, etc)
 
-- Example:
+- Example: -->
   <table>
   <tr>
     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/47452487?s=64&v=4" width="140px;" alt=""/>
+      <img src="https://avatars.githubusercontent.com/blessingnt" width="140px;" alt=""/>
       <br />
-      <sub><b>Allison Pratt</b></sub>
+      <sub><b>Blessing Ntekume</b></sub>
       <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAABKxIR0BLV8OyI1zzVgyL3KR2K0ePJ7tQS4&keywords=allison%20pratt&origin=RICH_QUERY_SUGGESTION&position=0&searchId=81cd2d60-188d-44c9-99ce-acff05157dc7&sid=~xo">🖇️</a>
-      <a href="https://github.com/allisons11">🐙</a>
+      <a href="https://www.linkedin.com/in/bntekume/">🖇️</a>
+      <a href="https://github.com/blessingnt">🐙</a>
     </td>
     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/69995214?v=4" width="140px;" alt=""/>
+      <img src="https://avatars.githubusercontent.com/crisdevs" width="140px;" alt=""/>
       <br />
-      <sub><b>Katrina Villanueva</b></sub>
+      <sub><b>Cristian Corrales</b></sub>
       <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAA4wGg4B94KTig7u7BXG-d_hbiDT6_INpB8&keywords=katrina%20villanueva&origin=RICH_QUERY_SUGGESTION&position=0&searchId=61fd3f0e-8949-4718-a772-d24f2617e726&sid=Zr~">🖇️</a>
-      <a href="https://github.com/klgvillanueva">🐙</a>
+      <a href="https://www.linkedin.com/in/criscorr/">🖇️</a>
+      <a href="https://github.com/crisdevs">🐙</a>
     </td>
     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/22311749?v=4" width="140px;" alt=""/>
+      <img src="https://avatars.githubusercontent.com/Nevjon12" width="140px;" alt=""/>
       <br />
-      <sub><b>Phillip Troutman</b></sub>
+      <sub><b>Jonathan Nevarez</b></sub>
       <br />
-      <a href="http://www.philliptroutman.info">💻</a>
-      <a href="https://www.linkedin.com/in/phillip-troutman/">🖇️</a>
-      <a href="https://github.com/troutman21">🐙</a>
+      <!-- <a href="http://www.philliptroutman.info">💻</a> -->
+      <a href="https://www.linkedin.com/in/john-nevarez/">🖇️</a>
+      <a href="https://github.com/Nevjon12">🐙</a>
     </td>
      <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/26197909?v=4" width="140px;" alt=""/>
+      <img src="https://avatars.githubusercontent.com/jennyschmalz" width="140px;" alt=""/>
       <br />
-      <sub><b>Natalie Klein</b></sub>
+      <sub><b>Jenny Schmalz</b></sub>
       <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAABxBUMYBYh3jl6z8XMVs4D1VjdqU-oastdc&keywords=natalie%20klein&origin=RICH_QUERY_SUGGESTION&position=0&searchId=7ca29d7e-56b5-4dce-a2a1-f9d9e5594052&sid=XY8">🖇️</a>
-      <a href="https://github.com/natalie-klein">🐙</a>
-    </td>
-
-     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/55901780?v=4" width="140px;" alt=""/>
-      <br />
-      <sub><b>Matt Severyn</b></sub>
-      <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAK5fh4B9u1D97RY2_jZzFWxkSD2_vI95FU&keywords=matt%20severyn&origin=RICH_QUERY_SUGGESTION&position=0&searchId=12621ad1-f56c-4697-bc46-3226963731e5&sid=_gz">🖇️</a>
-      <a href="https://github.com/mtseveryn">🐙</a>
-    </td>
-  <tr>
-    <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/80185584?v=4" width="140px;" alt=""/>
-      <br />
-      <sub><b>Mike Masatsugu</b></sub>
-      <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAnv9wwBJJ9SgtkuND-IT1hQIl6hVS50AJ4&keywords=mike%20masatsugu&origin=RICH_QUERY_SUGGESTION&position=0&searchId=51ea03d4-28fa-431c-b97c-df470d78d606&sid=~Ov">🖇️</a>
-      <a href="https://github.com/mikemasatsugu">🐙</a>
-    </td>
-    <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/23042350?v=4" width="140px;" alt=""/>
-      <br />
-      <sub><b>Laura Botel</b></sub>
-      <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAmzpoUBj471sEqvNBKzc5u79eTMejqPUpw&keywords=laura%20botel&origin=RICH_QUERY_SUGGESTION&position=0&searchId=d580c0ed-1e6b-45ae-a154-7fae088cf9d8&sid=(Vk">🖇️</a>
-      <a href="https://github.com/laurabotel">🐙</a>
-    </td>
-    <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/14981545?v=4" width="140px;" alt=""/>
-      <br />
-      <sub><b>Kyle Combs</b></sub>
-      <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAABsD-xUB8MG250UNDB03Czd4oKeUrPSwBV8&keywords=kyle%20combs&origin=RICH_QUERY_SUGGESTION&position=0&searchId=b49a7987-9a40-4b60-b91d-6334e724b9e7&sid=LHL">🖇️</a>
-      <a href="https://github.com/texpatnyc">🐙</a>
-    </td>
-     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/67646317?v=4" width="140px;" alt=""/>
-      <br />
-      <sub><b>Ryan McDaniel</b></sub>
-      <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAABNlEJ4B5MlocndBolrL7gxShrn__8CZSW8&keywords=ryan%20mcdaniel&origin=RICH_QUERY_SUGGESTION&position=0&searchId=80c10804-f648-4228-b00a-c4bbcfdc0a97&sid=B2g">🐙</a>
-    </td>
-     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/98861409?v=4" width="140px;" alt=""/>
-      <br />
-      <sub><b>Larissa Ciancarelli</b></sub>
-      <br />
-      <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADrk-RgBacU_23g56MXaukxem2rebUn0lSs&keywords=larissa%20ciancarelli&origin=RICH_QUERY_SUGGESTION&position=0&searchId=1495aff9-c389-4b74-9bd0-ea1a811e460a&sid=E(p">🖇️</a>
-      <a href="https://github.com/larissa-ciancarelli">🐙</a>
+      <a href="https://www.linkedin.com/in/jennyschmalz/">🖇️</a>
+      <a href="https://github.com/jennyschmalz">🐙</a>
     </td>
   </tr>
 </table>
@@ -197,7 +144,7 @@ Include a list of everyone who has contributed to the product (i.e. your OSP gro
 - 🐙 = Github
 
 
-## Other 
+<!-- ## Other 
 Some other possible additions to your README, which are optional but can be good to include:
 - FAQ 
 - Links to various publications (Medium Articles, Twitter pages, etc)
@@ -207,13 +154,13 @@ Some other possible additions to your README, which are optional but can be good
     - [Product Description](#product-description)
     - [Open Source Information](#open-source-information)
 - Badges 
-  - Add some cool [Badges to your README](https://github.com/alexandresanlim/Badges4-README.md-Profile)
+  - Add some cool [Badges to your README](https://github.com/alexandresanlim/Badges4-README.md-Profile) -->
 
 
 
-## Examples of great READMEs
+<!-- ## Examples of great READMEs
 Check out this list of great READMEs for some extra inspo 😎
 [LIST](https://github.com/matiassingers/awesome-readme)
-
+ -->
 
 
