@@ -57,25 +57,20 @@ __Running the Application__
   [![demo_screenshot](./assets/demo_screenshot.png)](https://www.youtube.com/watch?v=X_zp6CodHjc&t=493s) -->
 
 ## Open Source Information
-As your product is Open Source, your README should invite contributions and make it explicitly clear on how one should go about doing so. Therefore, make sure you provide the following information:
-  - Instructions on running the application in dev mode, and running tests (if you have them)
-  - Contribution guidelines
-    - Preferred workflow for contributions (e.g. forking, feature branch, pull request)
-  - List of planned/desired features
-    - Here is a cool way to display completed and future features:
+All contribution requests are reviewed and welcomed! 😊
+
+  - Contribution guidelines:
+    - Clone the repo to your machine and create a feature branch from the dev branch, naming it as the feature that is being worked on
+    - After completing changes, submit a pull request using the PR template provided
+    - Changes will be reviewed by main contributors
 
 | Feature                                                                               | Status    |
 |---------------------------------------------------------------------------------------|-----------|
-| CLI to run 11ty and Vite simultaneously                                               | ✅        |
-| Plugin ecosystem for your favorite component framework (React, Vue, Svelte, etc)      | ✅        |
-| Component pages                                                                       | ✅        |
-| Component shortcodes                                                                  | ✅        |
-| SCSS and SASS                                                                         | ⏳        |
-| PostCSS config (ex. Tailwind)                                                         | ⏳        |
-| CSS imports via ESM (including CSS modules)                                           | ⏳        |
-| Shared state between any component shortcode                                          | 🙏🏻        |
+| Access container/image metric data from backend                                       | ⏳        |
+| Dynamic data visualization dashboard using D3                                         | 🙏🏻        |
+| Use Twilio to send notications when memory is low                                     | 🙏🏻        |
 
-- ✅ = Ready to use
+<!-- - ✅ = Ready to use -->
 - ⏳ = In progress
 - 🙏🏻 = Looking for contributors
 
